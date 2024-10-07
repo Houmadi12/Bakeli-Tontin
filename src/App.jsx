@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Connexion from "./pages/Connexion";
+import Navbar from "./composants/navbar";
 
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Connexion />
+        {/* <Connexion /> */}
+        <Navbar type="Admin" />
       </div>
     );
   }

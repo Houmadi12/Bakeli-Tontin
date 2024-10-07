@@ -1,4 +1,5 @@
 import Reactat, { Component } from "react";
+import { IoIosNotificationsOutline } from "react-icons/io";
 
 class Navbar extends Component {
   constructor() {
@@ -7,11 +8,9 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
-          </a>
+      <nav className="navbar navbar-expand-lg bg-secondary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">{this.props.type}</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -21,27 +20,23 @@ class Navbar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item fs-1">
+                <IoIosNotificationsOutline />
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Features
+                  <div className="d-flex">
+                    <img src=""/>
+                    <div className="d-flex">
+                        <span className="fs-5">Ndiaga SALL</span>
+                        <span>Administrateur</span>
+                    </div>
+                  </div>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
           </div>
