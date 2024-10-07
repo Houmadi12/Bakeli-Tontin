@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import ErrorPage from './pages/erro-page.jsx';
 import Inscription from './pages/inscription.jsx';
-import Acceuil from './pages/Accueil.jsx';
+// import Acceuil from './pages/Accueil.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,10 +20,10 @@ const router = createBrowserRouter([
     path: "/inscription",
     element: <Inscription />
   },
-  {
-    path: "/accueil",
-    element: <Acceuil />
-  }
+  // {
+  //   path: "/accueil",
+  //   element: <Acceuil />
+  // }
 ])
 
 createRoot(document.getElementById('root')).render(
