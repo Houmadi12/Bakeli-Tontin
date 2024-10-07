@@ -7,7 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import ErrorPage from './pages/erro-page.jsx';
 import Inscription from './pages/inscription.jsx';
-import Acceuil from './pages/Accueil.jsx';
+import Acceuil from './pages/accueil.jsx';
+
 
 const router = createBrowserRouter([
   {
